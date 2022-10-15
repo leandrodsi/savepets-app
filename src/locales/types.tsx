@@ -1,8 +1,4 @@
-import {ComponentsLanguageType} from 'components/Components.types';
-import {
-  ErrorsLanguageType,
-  GlobalLanguageType,
-} from 'global/types/languages.type';
+import {GlobalLanguageType} from 'global/types/languages.type';
 // import {HomeLanguageType} from 'modules/home/Home.type';
 
 // @ts-ignore
@@ -50,16 +46,16 @@ export interface LocalesTranslateType {
 
 export interface LanguageType {
   global: GlobalLanguageType;
-  components: ComponentsLanguageType;
-  modules: ModulesLanguageType;
-  errors: ErrorsLanguageType;
+  // components: ComponentsLanguageType;
+  // modules: ModulesLanguageType;
+  // errors: ErrorsLanguageType;
 }
 
 export type LanguagePathType = Leaves<LanguageType>;
 
-interface ModulesLanguageType {
-  // home: HomeLanguageType;
-}
+// interface ModulesLanguageType {
+// home: HomeLanguageType;
+// }
 
 export interface TranslateLanguageType<T> {
   ptBr: T;
